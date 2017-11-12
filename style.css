@@ -1,0 +1,23 @@
+.log{
+  display: none;
+}
+@media screen and (min-width:1280px) {
+  .large-desktop{
+    display: block;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1279px) {
+  .desktop{
+    display: block;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .tablet{
+     display: block;
+  }
+}
+@media screen and (max-width:767px) {
+  .mobile{
+    display: block;
+  }
+}
