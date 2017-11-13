@@ -119,3 +119,11 @@ font-weight: 100;
 .btn:hover {
     background: #114b5f;
 }
+/* responsive */
+.home {
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+}
