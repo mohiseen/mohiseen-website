@@ -1,4 +1,4 @@
-.log{
+/* .log{
   display: none;
 }
 @media screen and (min-width:1280px) {
@@ -20,4 +20,21 @@
   .mobile{
     display: block;
   }
+} */
+.container{
+  width: 80%;
+  margin: auto;
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.left-grid{
+  width: 69%;
+  display: inline-block;
+}
+.right-grid{
+  width: 30%;
+      display: inline-block;
+      vertical-align: top;
 }
