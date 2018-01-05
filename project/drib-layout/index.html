@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dribbble Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="css/iconmonstr-iconic-font.css">
+    <link href="images/favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <div class="part1">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo1.png" alt="L" />
+        <span><a href="#">WapMail</a></span>
+      </div>
+      <ul class="nav-menu">
+        <li class="active"><a href="#"> Mail </a></li>
+        <li><a href="#"> Address book </a></li>
+        <li><a href="#"> Notepad </a></li>
+        <li><a href="#"> Files </a></li>
+        <li><a href="#"> Manage </a></li>
+      </ul>
+      <div class="profile">
+        <div class="profile-menu">
+          <p> Jason Lee <a href="#dropdown"><i class="im im-angle-down"></i></a></p>
+          <ul class="dropdown">
+            <li><a href="#"> Settings </a></li>
+            <li><a href="#"> Profile </a></li>
+            <li><a href="#"> SignOut </a></li>
+          </ul>
+        </div>
+        <div class="profile-photo">
+          <img src="images/user.jpg" alt="User Pic" />
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div><div class="clearfix"></div>
+    <!-- header ends -->
+    <!-- main grids starts -->
+    <div class="grid1-menu">
+      <a href="#" class="compose-btn"> <i class="im im-edit"></i> Compose </a>
+      <ul class="left-menu1">
+      <li class="active"> <a href="#"><i class="im im-inbox"></i> Inbox <span class="unread"> 2 </span></a></li>
+      <div class="clearfix"></div>
+      <li><a href="#"> <i class="im im-heart"></i> Dearest </a></li>
+      <li><a href="#"> <i class="im im-paperplane"></i> Sent </a></li>
+      <li><a href="#"> <i class="im im-pencil"></i> Drafts </a></li>
+      <li><a href="#"> <i class="im im-trash-can"></i> Trash </a></li>
+      <li><a href="#"> <i class="im im-speech-bubble-comment"></i> Chat </a></li>
+      </ul>
+      <ul class="left-menu2">
+        <li><a href="#"> <i class="im im-plus"></i> </a> <a href="#"> <i class="im im-pencil"></i> </a> <a href="#"> <i class="im im-magnifier"></i> </a>  </li>
+        <li><a href="#"> Labels </a><span class="dot1">.</span> </li>
+        <li><a href="#"> Clients </a><span class="dot2">.</span> </li>
+        <li><a href="#"> Personal </a><span class="dot3">.</span> </li>
+
+      </ul>
+      <ul class="left-menu3">
+        <li><a href="#"> <i class="im im-plus"></i> </a></li>
+      </ul>
+    </div>
+
+    <div class="grid2-view">
+      <form action="/" method="post">
+        <a href="#"> <i class="im im-magnifier search-mail"></i> </a> <input type="text" placeholder="Search Mail" name="search">
+      </form>
+      <input type="checkbox" name="select-mail">
+      <p class="sort-mail"> Sort : Newest First <a href="#"> <i class="im im-angle-down"></a></i> </p>
+      <!-- mail-box -->
+      <div class="mail-box-container">
+
+      <div class="mail-box" id="mail-box" onclick="myTun()">
+        <div class="left-icons">
+          <img class="mail-person" src="images/user.jpg" alt="user" />
+          <i class="im im-square-o"></i>
+          <i class="im im-heart"></i>
+        </div>
+        <div class="right-subject">
+          <p class="user-name"> Emir Sarafolo </p>
+          <p class="time"> 11:45 pm </p><div class="clearfix"></div>
+          <p class="subject"> Invitation </p>
+          <p class="text-msg"> Hey dude hop you are fine lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do magna...</p>
+
+        </div>
+      </div>
+      <div class="mail-box active" id="mail-box" onclick="myTun()">
+        <div class="left-icons">
+          <img class="mail-person" src="images/user.jpg" alt="user" />
+          <i class="im im-square-o"></i>
+          <i class="im im-heart"></i>
+        </div>
+        <div class="right-subject">
+          <p class="user-name"> Yip Kai, Alex, Johan... </p>
+          <p class="time"> <span class="blue-dot"> . </span>  10:25 pm </p><div class="clearfix"></div>
+          <p class="subject"> New Portfolio </p><i class="im im-paper-clip"></i>
+          <p class="text-msg"> Hey dude hop you are fine lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do magna...</p>
+
+        </div>
+      </div>
+      <div class="mail-box" id="mail-box" onclick="myTun()">
+        <div class="left-icons">
+          <img class="mail-person" src="images/user.jpg" alt="user" />
+          <i class="im im-square-o"></i>
+          <i class="im im-heart yellow"></i>
+        </div>
+        <div class="right-subject">
+          <p class="user-name"> Nur Fariha Omar </p>
+          <p class="time"> <span class="pink-dot"> . </span> Yesterday </p><div class="clearfix"></div>
+          <p class="subject"> Invitation </p>
+          <p class="text-msg"> Hey dude hop you are fine lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do magna...</p>
+
+        </div>
+      </div>
+      <div class="mail-box" id="mail-box" onclick="myTun()">
+        <div class="left-icons">
+          <img class="mail-person" src="images/user.jpg" alt="user" />
+          <i class="im im-square-o"></i>
+          <i class="im im-heart"></i>
+        </div>
+        <div class="right-subject">
+          <p class="user-name"> Emir Sarafolo </p>
+          <p class="time"> <span class="blue-dot"> . </span>  Yesterday </p><div class="clearfix"></div>
+          <p class="subject"> Invitation </p>
+          <p class="text-msg"> Hey dude hop you are fine lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do magna...</p>
+
+        </div>
+      </div>
+      <div class="mail-box" id="mail-box" >
+        <div class="left-icons">
+          <img class="mail-person" src="images/user.jpg" alt="user" />
+          <i class="im im-square-o"></i>
+          <i class="im im-heart"></i>
+        </div>
+        <div class="right-subject">
+          <p class="user-name"> Emir Sarafolo </p>
+          <p class="time"> <span class="blue-dot"> . </span>  Yesterday </p><div class="clearfix"></div>
+          <p class="subject"> Invitation </p>
+          <p class="text-msg"> Hey dude hop you are fine lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do magna...</p>
+
+        </div>
+      </div>
+    </div><!-- mail-box-container ends -->
+  </div><!-- grid2 ends -->
+    <div class="grid3-details">
+      <div class="subject-nav">
+        <a href="#"><i class="im im-arrow-left"></i></a>
+        <h2 class="subject"> New Portfolio  <a href="#"><i class="im im-export"></i></a> <a href="#"><i class="im im-menu"></i></a></h2>
+
+      </div>
+      <div class="full-mail-container">
+      <p class="previous-mails"> 4 Previous Messages in this conversation </p>
+
+      <div class="full-mail">
+        <div class="name-time">
+          <img src="images/user.jpg" alt="user" />
+          <p class="my-name"><a href="#"> Yip Kai Man </a> <span class="time"> Thursday, Feb 4, 2016 </span></p>
+          <p class="user-add"> Alex Knight, Johan Smith, Me <span class="blue-dot"> . </span> Clients <span class="time"> 10:25 PM </span></p>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="mail-text">
+          <p class="message">
+            Hi Jason,<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad min im veniam, quis nostrud exerctation
+            ullamco laboris nisi ut aliqulpex ea commodo consequat. Duis aute irure dolor
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br><br>
+            Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab consectetur.
+            <br><br>
+            Best regards,<br>
+            Yip Kai Man
+          </p>
+        </div>
+        <div class="mail-attach">
+          <a href="#"><i class="im im-paper-clip"></i> Wireframe (650KB) </a>
+          <span><a href="#"> Share </a> <a href="#"> Show </a> <a href="#"> Download </a> </span>
+        </div>
+      </div>
+      <div class="reply-forward">
+        <p> Click here to <a href="#"> Reply </a> or <a href="#"> Forward </a> <a href="#"> <i class="im im-paper-clip"></i></a></p>
+      </div>
+    </div><!-- full-mail-container ends-->
+  </div>
+  </div>
+    <!-- messenger grid -->
+    <div class="part2">
+      <div class="open-close">
+
+          <a href="#" class="left"> <i class="im im-angle-right"></i> <i class="im im-menu-dot-v"></i> </a>
+
+
+          <a href="#" class="right"> <i class="im im-minus"></i> <i class="im im-check-square-i"></i> <i class="im im-x-mark"></i> </a>
+          <div class="clearfix"></div>
+      </div>
+    <div class="messenger-grid">
+      <div class="active-chaat">
+        <a href="#"> <i class="im im-speech-bubble"></i> <i class="im im-menu-dot-v"></i> </a>
+        <a href="#"><img src="images/user.jpg" alt="user"> Nur Feriha <i class="im im-paper-clip"></i> <i class="im im-menu-dot-v"></i> </a>
+      </div>
+      <div class="friends-list">
+        <a href="#"><img src="images/user.jpg" alt="friend1"></a>
+        <a href="#"><img src="images/user.jpg" alt="friend1"></a>
+        <a href="#"><img class="active" src="images/user.jpg" alt="friend1"></a>
+        <a href="#"><img src="images/user.jpg" alt="friend1"></a>
+        <a href="#"><img src="images/user.jpg" alt="friend1"></a>
+        <a href="#"><img src="images/user.jpg" alt="friend1"></a>
+      </div>
+      <div class="friends-msg">
+        <div class="my-msg">
+          <p> Hey Jeson </p>
+          <p class="time"> 11:00 AM </p>
+        </div>
+        <div class="friend-msg">
+          <p> Yup </p>
+          <p class="time"> 11:00 AM </p>
+        </div>
+        <div class="my-msg">
+          <p> Can you meet me today? </p>
+          <p class="time"> 11:01 AM </p>
+        </div>
+
+        <div class="friend-msg">
+          <p> busy today. </p>
+          <p class="time"> 11:02 AM </p>
+        </div>
+        <div class="my-msg">
+          <p> Ok.  </p>
+          <p class="time"> 11:02 AM </p>
+        </div>
+        <div class="friend-msg">
+          <p class="loading"> <span class="load1"> . </span><span class="load2">  . </span><span class="load3">  . </span></p>
+
+        </div>
+
+    </div>
+    <div class="type-text">
+      <div class="text-input">
+        <input type="text" placeholder="" name="text-chaat" ><i class="im im-smiley-o"></i>
+      </div>
+    </div>
+  </div><div class="clearfix"></div>
+</div>
+  <!-- main grids ends -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+function myTun() {
+document.getElementById('mail-box').classList.toggle('active');
+}
+</script>
+
+
+  </body>
+</html>
