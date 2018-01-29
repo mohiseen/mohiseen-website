@@ -80,9 +80,10 @@ body {
   display: inline-block;
     float: right;
     padding: 20px;
+        width: 250px;
 }
 header a {
-    margin: 0px 20px;
+      margin-left: 5%;
     color: #fff;
 font-size: 16px;
 font-weight: 400;
@@ -166,4 +167,9 @@ a.btnAbout {
 a.btnAbout:hover {
     background: #fff;
     color: black;
+}
+/*work page*/
+h3.black {
+    color: black;
+    margin-bottom: 25px;
 }
