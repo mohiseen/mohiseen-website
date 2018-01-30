@@ -177,3 +177,10 @@ h3.black {
     width: 100%;
     margin: auto;
 }
+.imgtumb {
+    display: inline-block;
+    width: 49%;
+}
+.imgtumb.drib {
+    width: 80%;
+}
