@@ -173,3 +173,7 @@ h3.black {
     color: black;
     margin-bottom: 25px;
 }
+.work img {
+    width: 80%;
+    margin: auto;
+}

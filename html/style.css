@@ -134,3 +134,33 @@ font-weight: 100;
     margin: auto;
 }
 }
+/* header */
+header {
+    height: 60px;
+    background: transparent;
+    color: #fff;
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-transform: capitalize;
+}
+.logo {
+    display: inline-block;
+    float: left;
+    padding: 20px;
+}
+.head-menu {
+  display: inline-block;
+    float: right;
+    padding: 20px;
+        width: 250px;
+}
+header a {
+      margin-left: 5%;
+    color: #fff;
+font-size: 16px;
+font-weight: 400;
+}
+.clearfix{
+  clear: both;
+}
