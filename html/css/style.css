@@ -166,7 +166,7 @@ a.btnAbout {
 }
 a.btnAbout:hover {
     background: #fff;
-     color: black;
+    color: black;
 }
 /*work page*/
 h3.black {
@@ -178,9 +178,9 @@ h3.black {
     margin: auto;
 }
 .imgtumb {
-     display: inline-block;
-     width: 45%;
-     margin-left: 20px;
+    display: inline-block;
+    width: 45%;
+    margin-left: 20px;
 }
 .imgtumb.drib {
   /*  width: 80%; */
