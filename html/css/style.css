@@ -185,3 +185,8 @@ h3.black {
 .imgtumb.drib {
   /*  width: 80%; */
 }
+.imgtumb {
+     display: inline-block;
+     width: 45%;
+     margin-left: 20px;
+}
