@@ -68,7 +68,7 @@ a:focus, a:hover {
 .home {
     text-align: center;
     padding: 10%;
-    background: #436DBF;
+    background: #607D8B;
     letter-spacing: 2px;
     min-height: 100vh;
 }
@@ -133,4 +133,35 @@ font-weight: 100;
     width: 100%;
     margin: auto;
 }
+}
+/* header */
+header {
+    height: 60px;
+    background: #075073ab;
+    color: #fff;
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-transform: capitalize;
+}
+.logo {
+    display: inline-block;
+    float: left;
+    padding: 20px;
+}
+.head-menu {
+  display: inline-block;
+    float: right;
+    padding: 20px;
+        width: 250px;
+}
+header a {
+      margin-left: 5%;
+    color: #fff;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 1px;
+}
+.clearfix{
+  clear: both;
 }
