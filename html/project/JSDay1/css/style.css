@@ -6,17 +6,22 @@ body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: url('../drums.jpg') no-repeat;
+background-size: cover;
+min-height: 100vh;
 }
 h1 {
     font-size: 50px;
     text-align: center;
     text-transform: capitalize;
     font-weight: 100;
+    margin-top: 0px;
+padding-top: 35px;
 }
 .keys {
   display:flex;
   flex:1;
-  min-height:100vh;
+  min-height:calc( 100vh - 170px );
   align-items: center;
   justify-content: center;
 }
