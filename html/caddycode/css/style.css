@@ -676,3 +676,85 @@ a.nav-link {
     padding: 0px;
 }
 }
+@media screen and (max-width: 414px){
+  h1 {
+    padding: 20px 0px;
+  }
+  h1::after {
+    left: 36%;
+    bottom: 12px;
+    width: 105px;
+}
+.header h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+a.nav-link {
+    font-size: 10px;
+    padding: 0;
+}
+.header {
+    padding: 15px 5px;
+}
+.row1 span.im.im-redo {
+    font-size: 12px;
+    right: -10px;
+}
+.row1 .toggle-bar {
+    margin-left: 0PX;
+    margin-right: 0PX;
+}
+.row2 {
+    padding: 3%;
+}
+footer {
+    padding: 15px 5px;
+}
+.payment-cols {
+    margin: 4% 3%;
+}
+.price-details {
+    width: 97%;
+    margin: auto;
+        padding: 10px;
+}
+.pay-box p {
+    padding: 5px;
+}
+.buttons {
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .btn-blue {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px){
+  p.txt-right {
+    width: 200px;
+  }
+  a.nav-link.f-left {
+    margin-top: 25px;
+}
+a.nav-link.f-right {
+    margin-top: 10px;
+}
+.header h2 {
+  text-align: left;
+}
+.form-input {
+    width: 90%;
+  }
+  .form-input-full {
+    padding: 5px;
+    width: 90%;
+}
+.upload a.btn-green {
+    vertical-align: super;
+}
+.upload span.im.im-redo {
+
+    vertical-align: super;
+}
+
+}
