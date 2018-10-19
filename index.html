@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Web Developer</title>
   <link rel="stylesheet" href="css/iconmonstr-iconic-font.min.css">
+  <link rel="stylesheet" href="css/animations-ie-fix.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/styles.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -12,15 +14,15 @@
 <body>
   <div class="banner">
     <div class="container">
-      <figure>
-        <img src="images/mohiseen-front-end-developer-2.JPG" alt="">
+      <figure class="animatedParent">
+        <img src="images/mohiseen-front-end-developer-2.JPG" class="animated flip" alt="">
       </figure>
-      <div class="content">
-        <h1>Mohiseen Shaik<span class="sub-heading">Web Developer</span></h1>
-        <p>I build functional website and applications, with focus on responsive web developement</p>
+      <div class="content animatedParent">
+        <h1 class="animated fadeInUp"><span class="">Mohiseen Shaik </span><span class="sub-heading ">Web Developer</span></h1>
+        <p class="animated fadeInLeft">I build functional website and applications, with focus on responsive web developement</p>
         <!-- <a href="mailto:ms21.shaik@gmail.com" class="button">Hire Me</a> -->
-        <a href="https://www.linkedin.com/in/mohiseen/" class="button">Hire Me <img class="linkedin" src="images/linkedin3.png" alt="in"></a>
-        <a href="https://goo.gl/1eV93n" class="button -outline">Resume</a>
+        <a href="https://www.linkedin.com/in/mohiseen/" class="button animated shake">Hire Me <img class="linkedin" src="images/linkedin3.png" alt="in"></a>
+        <a href="https://goo.gl/1eV93n" class="button -outline animated rotateIn">Resume</a>
       </div>
     </div>
   </div>
@@ -196,6 +198,7 @@
   gtag('config', 'UA-109827680-2');
 </script>
   <script src="js/main.min.js"></script>
+  <script src="js/css3-animate-it.js"></script>
 </body>
 
 </html>
