@@ -9,6 +9,70 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/styles.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+#tekt:hover::before {
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+#tekt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-linear-gradient(135deg,#3F51B5,#162473);
+    background: linear-gradient(135deg,#3F51B5,#162473);
+    border-radius: 4px;
+    -webkit-transition: box-shadow .5s ease,-webkit-transform .2s ease;
+    transition: box-shadow .5s ease,-webkit-transform .2s ease;
+    transition: box-shadow .5s ease,transform .2s ease;
+    transition: box-shadow .5s ease,transform .2s ease,-webkit-transform .2s ease;
+    will-change: transform;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    -webkit-transform: translateY(var(--ty,0)) rotateX(var(--rx,0)) rotateY(var(--ry,0)) translateZ(var(--tz,-12px));
+    transform: translateY(var(--ty,0)) rotateX(var(--rx,0)) rotateY(var(--ry,0)) translateZ(var(--tz,-12px));
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#tekt::after {
+    position: relative;
+    display: inline-block;
+    content: attr(data-title);
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+    font-weight: bold;
+    letter-spacing: .01em;
+    will-change: transform;
+    -webkit-transform: translateY(var(--ty,0)) rotateX(var(--rx,0)) rotateY(var(--ry,0));
+    transform: translateY(var(--ty,0)) rotateX(var(--rx,0)) rotateY(var(--ry,0));
+}
+#tekt {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    /*font-family: "Varela Round";*/
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+</style>
+
+
+
 </head>
 
 <body>
@@ -21,10 +85,85 @@
         <h1 class="animated fadeInUp"><span class="">Mohiseen Shaik </span><span class="sub-heading ">Web Developer</span></h1>
         <p class="animated fadeInLeft">I build functional website and applications, with focus on responsive web developement</p>
         <!-- <a href="mailto:ms21.shaik@gmail.com" class="button">Hire Me</a> -->
-        <a href="https://www.linkedin.com/in/mohiseen/" class="button animated shake">Hire Me <img class="linkedin" src="images/linkedin3.png" alt="in"></a>
+        <a href="https://www.linkedin.com/in/mohiseen/" id="tekt" class="" data-title="H i r e &nbsp;&nbsp;M e"></a><br/><br/>
         <a href="https://docs.google.com/document/d/1xbiTTR8TyMvIRUesXLmwZGQO0rGIj_ubGjOkuVPrBj4/edit?usp=sharing" class="button -outline animated rotateIn">Resume</a>
       </div>
     </div>
+    <script>
+    		'use strict';
+
+
+
+    var docStyle = document.documentElement.style;
+
+    var aElem = document.querySelector('body');
+
+    var boundingClientRect = aElem.getBoundingClientRect();
+
+
+
+    aElem.onmousemove = function (e) {
+
+
+
+    	var x = e.clientX - boundingClientRect.left;
+
+    	var y = e.clientY - boundingClientRect.top;
+
+
+
+    	var xc = boundingClientRect.width / 2;
+
+    	var yc = boundingClientRect.height / 2;
+
+
+
+    	var dx = x - xc;
+
+    	var dy = y - yc;
+
+
+
+    	docStyle.setProperty('--rx', dy / -12 + 'deg');
+
+    	docStyle.setProperty('--ry', dx / 15 + 'deg');
+
+    };
+
+
+
+    aElem.onmouseleave = function (e) {
+
+
+
+    	docStyle.setProperty('--ty', '0');
+
+    	docStyle.setProperty('--rx', '0');
+
+    	docStyle.setProperty('--ry', '0');
+
+    };
+
+
+
+    aElem.onmousedown = function (e) {
+
+
+
+    	docStyle.setProperty('--tz', '-25px');
+
+    };
+
+
+
+    document.body.onmouseup = function (e) {
+
+
+
+    	docStyle.setProperty('--tz', '-12px');
+
+    };
+    </script>
   </div>
   <div class="portfolio-wrapper">
     <div class="container">
