@@ -133,7 +133,7 @@ i.im.im-angle-down {
 }
 /* grid 1  */
 .grid1-menu {
-  display: inline-block;
+  float:left;
   width: 190px;
   letter-spacing: 1px;
   background: #fff;
@@ -249,7 +249,7 @@ ul.left-menu3 li a i {
 .grid2-view {
   background-color: #f3f5f4;
   width: 360px;
-  display: inline-block;
+  float:left;
   vertical-align: top;
   padding: 15px;
   padding-bottom: 0px;
@@ -393,7 +393,8 @@ span.blue-dot {
 /* //Grid-2 */
 /* Grid-3 */
 .grid3-details {
-  width: 630px;
+  float:left;
+  width: calc( 100% - 543px );
   display: inline-block;
   vertical-align: top;
   background-color: #eaedec;
@@ -567,14 +568,14 @@ i.im.im-paper-clip {
   font-size: 14px;
 }
 .friends-list {
-  width: 60px;
-  display: inline-block;
-  background-color: #fff;
-  text-align: center;
-  padding: 20px 10px;
-  overflow-y: auto;
-  height: calc(100vh - 79px - 70px );
-  vertical-align: top;
+     width: 70px;
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 3px;
+    overflow-y: scroll;
+    height: calc(100vh - 79px - 70px );
+    vertical-align: top;
 }
 .friends-list img {
   margin: 20px 0px;
