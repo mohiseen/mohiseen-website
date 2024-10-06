@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CaddyCode Word Document to html conversion</title>
+    <link rel="stylesheet" href="css/iconmonstr-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="home-page2">
+      <h1>Multiple Move-in's</h1>
+      <div class="container">
+        <div class="page2">
+          <div class="header">
+            <h2><a href="index.html" class="nav-link f-left"><span class="im im-angle-left-circle"></span>(Back to Step 1)</a>
+            MOVE-IN INFORMATION
+            <a href="index3.html" class="nav-link f-right">(Proceed to Step 3)<span class="im im-angle-right-circle"></span></a></h2>
+            <div class="clearfix"></div>
+          </div>
+          <form action="" method="post">
+            <div class="row1">
+              <div class="form-select">
+                <label>location</label>
+                <select class="select-location" name="select-location">
+                  <option> &nbsp; </option>
+                  <option value="loc1"> location 1 </option>
+                  <option value="loc2"> location 2 </option>
+                  <option value="loc3"> location 3 </option>
+                </select>
+              </div>
+
+              <div class="form-select">
+                <label>building</label>
+                <select class="select-building" name="select-building">
+                  <option> &nbsp; </option>
+                  <option value="building1"> building 1 </option>
+                  <option value="building2"> building 2 </option>
+                  <option value="building3"> building 3 </option>
+                </select>
+              </div>
+
+              <div class="form-select relative">
+                <label>Unit number(s)</label>
+                <select class="select-units" name="select-units">
+                  <option> &nbsp; </option>
+                  <option value="units1"> units 1 </option>
+                  <option value="units2"> units 2 </option>
+                  <option value="units3"> units 3 </option>
+                </select>
+                <a href="#" class="btn-refresh"><span class="im im-redo" ></span> </a>
+                <a href="#" class="btn-green"> Add units </a>
+              </div>
+
+              <div class="form-date relative">
+                <label>Move-in date</label>
+                <input type="date" name="move-in-date">
+                <span class="im im-calendar"></span>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-date relative">
+                <label>Invoice date</label>
+                <input type="date" name="move-in-date">
+                <span class="im im-calendar"></span>
+
+              </div>
+
+              <div class="form-select">
+                <label>Invoice type</label>
+                <select class="select-invoicet" name="select-invoicet">
+                  <option> &nbsp; </option>
+                  <option value="invoicet1"> invoicet 1 </option>
+                  <option value="invoicet2"> invoicet 2 </option>
+                  <option value="invoicet3"> invoicet 3 </option>
+                </select>
+              </div>
+
+              <div class="form-select">
+                <label>Invoice recurring</label>
+                <select class="select-invoicer" name="select-invoicer">
+                  <option> &nbsp; </option>
+                  <option value="invoicer1"> invoicer 1 </option>
+                  <option value="invoicer2"> invoicer 2 </option>
+                  <option value="invoicer3"> invoicer 3 </option>
+                </select>
+              </div>
+
+              <div class="form-date">
+                <label>Next billing date</label>
+                <input type="text" name="next-billing-date" value=" 07/02/2018" disabled>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-date">
+                <label>Rent Period</label>
+                <input type="text" name="rent-period" value=" 06/02/2018 - 05/06/2018" disabled>
+              </div>
+              <!-- toggle button -->
+              <div class="toggle-bar f-left">
+
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+                <label class="toggle">Send invoice</label>
+              </div>
+              <div class="toggle-bar f-left">
+
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+                <label class="toggle">Round up month</label>
+              </div>
+              <div class="clearfix"></div>
+              <!-- toggle button ends -->
+            </div><!-- row1 ends -->
+            <!-- row2 starts -->
+            <div class="row2">
+              <form method="post">
+                <div class="unit1-box">
+                  <h3>Unit 1 Infomation</h3>
+                  <h4>Pricing</h4>
+                  <div class="form-unit">
+                    <label>standard rate (pm)</label>
+                    <input type="text" name="std-rate" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <label>rental rate (pm)</label>
+                    <input type="text" name="rental-rate" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <label>(7.00)% Tax (pm)</label>
+                    <input type="text" name="tax-percentage" value="">
+                  </div>
+                  <div class="clearfix"></div>
+
+                  <div class="form-unit">
+                    <label>security deposit</label>
+                    <input type="text" name="security-deposit" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <input type="checkbox" name="is-refundable" value="" checked> Is Refundable
+                  </div>
+
+                  <div class="form-unit">
+                    <label>intial rent</label>
+                    <input type="text" name="rent" value="">
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                  <h4>Other Infomation</h4>
+                  <div class="form-unit">
+                    <label>additional months</label>
+                    <select class="additional-months" name="additional-months">
+                      <option> &nbsp; </option>
+                      <option value="additional-months1"> 1 </option>
+                      <option value="additional-months2"> 2 </option>
+                      <option value="additional-months3"> 3 </option>
+                    </select>
+                  </div>
+
+                  <div class="form-unit">
+                    <label>(-) rent discount</label>
+                    <input type="text" name="rent-discount" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <label>net unit rent</label>
+                    <input type="text" name="net-unit-rent" value="">
+                  </div>
+                  <div class="clearfix"></div>
+
+                  <div class="form-unit">
+                    <label>Gate access code</label>
+                    <input type="text" name="net-unit-rent" value="">
+                  </div>
+
+                  <div class="form-comments">
+                    <label>comments</label>
+                    <textarea name="comments" rows="8" cols="80"></textarea>
+                  </div>
+                </div><!-- box1 ends -->
+                <!-- box2 starts -->
+                <div class="unit1-box box2">
+                  <h3>Unit 2 Infomation</h3>
+                  <h4>Pricing</h4>
+                  <div class="form-unit">
+                    <label>standard rate (pm)</label>
+                    <input type="text" name="std-rate" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <label>rental rate (pm)</label>
+                    <input type="text" name="rental-rate" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <label>(7.00)% Tax (pm)</label>
+                    <input type="text" name="tax-percentage" value="">
+                  </div>
+                  <div class="clearfix"></div>
+
+                  <div class="form-unit">
+                    <label>security deposit</label>
+                    <input type="text" name="security-deposit" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <input type="checkbox" name="is-refundable" value="" checked> Is Refundable
+                  </div>
+
+                  <div class="form-unit">
+                    <label>intial rent</label>
+                    <input type="text" name="rent" value="">
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                  <h4>Other Infomation</h4>
+                  <div class="form-unit">
+                    <label>additional months</label>
+                    <select class="additional-months" name="additional-months">
+                      <option> &nbsp; </option>
+                      <option value="additional-months1"> 1 </option>
+                      <option value="additional-months2"> 2 </option>
+                      <option value="additional-months3"> 3 </option>
+                    </select>
+                  </div>
+
+                  <div class="form-unit">
+                    <label>(-) rent discount</label>
+                    <input type="text" name="rent-discount" value="">
+                  </div>
+
+                  <div class="form-unit">
+                    <label>net unit rent</label>
+                    <input type="text" name="net-unit-rent" value="">
+                  </div>
+                  <div class="clearfix"></div>
+
+                  <div class="form-unit">
+                    <label>Gate access code</label>
+                    <input type="text" name="net-unit-rent" value="">
+                  </div>
+
+                  <div class="form-comments">
+                    <label>comments</label>
+                    <textarea name="comments" rows="8" cols="80"></textarea>
+                  </div>
+                </div>
+                <!-- box2 ends -->
+              </form>
+              <div class="clearfix"></div>
+            </div>
+        </form>
+        </div>
+        <footer>
+          <a href="index.html" class="nav-link f-left"><span class="im im-angle-left-circle"></span>(Back to Step 1)</a>
+          <a href="index3.html" class="nav-link f-right">(Proceed to Step 3)<span class="im im-angle-right-circle"></span></a>
+          <div class="clearfix"></div>
+        </footer>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </body>
+</html>

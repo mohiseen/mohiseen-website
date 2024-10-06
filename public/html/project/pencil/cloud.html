@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Raining With Strom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="bootstrap.min.css" rel="stylesheet">	
+	
+<script src="bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<style>
+.rainy {
+    animation: rainy 5s ease-in-out infinite 1s;
+    background: #ddd;
+    border-radius: 50%;
+    box-shadow: #ddd 65px -15px 0 -5px, #ddd 25px -25px, #ddd 30px 10px, #ddd 60px 15px 0 -10px, #ddd 85px 5px 0 -5px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    position: absolute;
+    left: 5%;
+    top: 60px;
+}
+.rainy:before {
+    animation: rainy_rain .7s infinite linear;
+    content: '';
+    background: #ddd;
+    border-radius: 50%;
+    display: block;
+    height: 6px;
+    width: 3px;
+    opacity: 0.3;
+    transform: scale(.9);
+}
+.rainy:after {
+    animation: rainy_shadow 5s ease-in-out infinite 1s;
+    background: #666;
+    border-radius: 50%;
+    content: '';
+    height: 15px;
+    width: 120px;
+    opacity: 0.2;
+    position: absolute;
+    left: 5px;
+    bottom: -60px;
+    transform: scale(1);
+}
+.stormy {
+    animation: stormy 5s ease-in-out infinite;
+    background: #ddd;
+    border-radius: 50%;
+    box-shadow: #ddd 65px -15px 0 -5px, #ddd 25px -25px, #ddd 30px 10px, #ddd 60px 15px 0 -10px, #ddd 85px 5px 0 -5px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 25%;
+    top: 70px;
+}
+
+.stormy:before {
+    animation: stormy_thunder 2s steps(1, end) infinite;
+    border-left: 0px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 43px solid #ccc;
+    box-shadow: #ccc -7px -32px;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 57px;
+    top: 70px;
+    transform: rotate(14deg);
+    transform-origin: 50% -60px;
+}
+.stormy:after {
+    animation: stormy_shadow 5s ease-in-out infinite;
+    background: #666;
+    border-radius: 50%;
+    content: '';
+    height: 15px;
+    width: 120px;
+    opacity: 0.2;
+    position: absolute;
+    left: 5px;
+    bottom: -60px;
+    transform: scale(1);
+}
+</style>
+</head>
+<body>
+<div style="position:relative;">
+<div class="rainy"></div>
+<div class="stormy"></div>
+</div>
+
+</body>
+</html>

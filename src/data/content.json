@@ -1,0 +1,118 @@
+{
+    "banner": {
+      "image": "/images/mohiseen-front-end-developer-2.JPG",
+      "heading": {
+        "name": "Mohiseen Shaik",
+        "title": "Web Developer"
+      },
+      "description": "I build functional websites and applications, with a focus on responsive web development.",
+      "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      "cta": [
+        {
+          "link": "https://www.linkedin.com/in/mohiseen/",
+          "id": "follow",
+          "text": "Hire Me"
+        },
+        {
+          "link": "https://docs.google.com/document/d/1xbiTTR8TyMvIRUesXLmwZGQO0rGIj_ubGjOkuVPrBj4/edit?usp=sharing",
+          "text": "Resume"
+        }
+      ]
+    },
+    "portfolio": [
+      {
+        "title": "Realbuild",
+        "link": "https://goo.gl/BZvADh",
+        "image": "/images/portfolio-image.png",
+        "description": "Realbuild is a real estate themed multipurpose template, designed to expand real estate businesses.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      },
+      {
+        "title": "Go Fly Traveller",
+        "link": "https://goo.gl/ircuQF",
+        "image": "/images/traveller.jpg",
+        "description": "Go Fly Traveller is a travel themed template, designed for tourism-related websites.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      },
+      {
+        "title": "Thaimoli",
+        "link": "/html/project/thaimoli/",
+        "image": "/images/thaimoli.jpg",
+        "description": "Thaimoli is a daily newspaper-themed template for online newspaper websites.",
+        "contributions": ["HTML", "CSS", "JS"]
+      },
+      {
+        "title": "Edumate",
+        "link": "https://goo.gl/oKjVEy",
+        "image": "/images/edumate.jpg",
+        "description": "Edumate is an education-themed template for boosting education businesses online.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      },
+      {
+        "title": "Pencil of Promise",
+        "link": "/html/project/pencil/",
+        "image": "/images/pencil.jpg",
+        "description": "Pencil of Promise is an education-themed template for expanding education businesses.",
+        "contributions": ["HTML", "CSS", "JS"]
+      },
+      {
+        "title": "Decorate",
+        "link": "https://goo.gl/KaAPK8",
+        "image": "/images/decorate.jpg",
+        "description": "Decorate is an interior design-themed template for boosting interior decoration businesses.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      },
+      {
+        "title": "Email App",
+        "link": "/html/project/drib-layout/",
+        "image": "/images/email-app-by-Iftikhar-Shaikh.png",
+        "description": "Email App is a template for email app interfaces posted by Iftikhar Shaik on Dribbble.",
+        "contributions": ["HTML", "CSS", "JS"]
+      },
+      {
+        "title": "Photosnap",
+        "link": "https://goo.gl/CCcpT9",
+        "image": "/images/photosnap.jpg",
+        "description": "Photosnap is a photography-themed template for photography-related websites.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      },
+      {
+        "title": "Drumkit",
+        "link": "/html/project/jsday1/",
+        "image": "/images/drumkit.png",
+        "description": "Drumkit is a template for photography-related websites, designed for expanding photography businesses.",
+        "contributions": ["HTML", "CSS", "JS"]
+      },
+      {
+        "title": "Winter Login Form",
+        "link": "https://goo.gl/NwbRoC",
+        "image": "/images/winterlogin.jpg",
+        "description": "Winter Login Form is a stylish login form designed for various types of websites.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      },
+      {
+        "title": "Appoint My Doctor Form",
+        "link": "https://goo.gl/VS6mpt",
+        "image": "/images/appoint-form.jpg",
+        "description": "Appoint My Doctor Form is a medical appointment form designed for health-related websites.",
+        "contributions": ["HTML", "CSS", "JS"],
+        "metaInfo": "At AgileITs"
+      }
+    ],
+    "footer": {
+      "social": [
+        {"platform": "LinkedIn", "link": "https://www.linkedin.com/in/mohiseen/"},
+        {"platform": "Twitter", "link": "https://twitter.com/msnshaik"},
+        {"platform": "GitHub", "link": "https://github.com/mohiseen"},
+        {"platform": "Email", "link": "mailto:mohiseen.shaik2011@gmail.com"}
+      ],
+      "copyright": "© 2017-2024 Mohiseen.com"
+    }
+  }
+  
