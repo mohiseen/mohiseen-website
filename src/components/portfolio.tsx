@@ -3,14 +3,26 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { LinkedinLogo, TwitterLogo, GithubLogo, EnvelopeSimple, Buildings } from "@phosphor-icons/react"
+import { LinkedinLogo, GithubLogo, EnvelopeSimple, Buildings } from "@phosphor-icons/react"
 import Link from "next/link"
 import Image from "next/image"
-import content from '@/data/content.json'
 import { Badge } from "@/components/ui/badge"
+import { useEffect, useState } from "react"
 
-export default function Portfolio() {
-  const { banner, portfolio, footer } = content;
+export default function Portfolio(props: object) {
+  const { data } = props
+  const { banner, portfolio, footer } = data;
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Only render content when the component is mounted to avoid mismatch between SSR and client-side rendering
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-bl from-gray-600 to-gray-950 text-white">
@@ -90,7 +102,23 @@ export default function Portfolio() {
                     whileHover={{ x: 0 }}
                     transition={{ duration: 0.3 }}
                   />
+                  <span className="flex justify-center ms-2">
+            {footer.social.map((item, index) => (
+              <motion.a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                {item.platform === "LinkedIn" && <LinkedinLogo size={24} />}
+              </motion.a>
+            ))}
+          </span>
                 </Link>
+                
               </Button>
             ))}
           </motion.div>
@@ -118,8 +146,8 @@ export default function Portfolio() {
             >
               <Card className="bg-gray-800 border-gray-700">
                 <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
-                  {item.metaInfo && <CardDescription><Buildings size={16} /> {item.metaInfo}</CardDescription>}
+                  <CardTitle className="text-lime-400">{item.title}</CardTitle>
+                  {item.metaInfo && <CardDescription className="flex gap-3"> <Buildings size={16} /> {item.metaInfo}</CardDescription>}
                 </CardHeader>
                 <CardContent>
                   <Image
@@ -129,7 +157,7 @@ export default function Portfolio() {
                     height={225}
                     className="rounded-md mb-4"
                   />
-                  <p className="text-sm">{item.description}</p>
+                  <p className="text-sm text-white">{item.description}</p>
                 </CardContent>
                 <CardFooter className="flex justify-between items-center">
                   <div className="flex gap-2">
@@ -140,7 +168,7 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <Button asChild variant="ghost" size="sm">
-                    <Link href={item.link}>View Project</Link>
+                    <Link href={item.link} className="bg-secondary">View Project</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -163,7 +191,6 @@ export default function Portfolio() {
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 {item.platform === "LinkedIn" && <LinkedinLogo size={24} />}
-                {item.platform === "Twitter" && <TwitterLogo size={24} />}
                 {item.platform === "GitHub" && <GithubLogo size={24} />}
                 {item.platform === "Email" && <EnvelopeSimple size={24} />}
               </motion.a>

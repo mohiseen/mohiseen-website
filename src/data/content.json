@@ -2,7 +2,7 @@
     "banner": {
       "image": "/images/mohiseen-front-end-developer-2.JPG",
       "heading": {
-        "name": "Mohiseen Shaik",
+        "name": "Mohiseen",
         "title": "Web Developer"
       },
       "description": "I build functional websites and applications, with a focus on responsive web development.",
@@ -11,11 +11,7 @@
         {
           "link": "https://www.linkedin.com/in/mohiseen/",
           "id": "follow",
-          "text": "Hire Me"
-        },
-        {
-          "link": "https://docs.google.com/document/d/1xbiTTR8TyMvIRUesXLmwZGQO0rGIj_ubGjOkuVPrBj4/edit?usp=sharing",
-          "text": "Resume"
+          "text": "Connect"
         }
       ]
     },
@@ -108,7 +104,6 @@
     "footer": {
       "social": [
         {"platform": "LinkedIn", "link": "https://www.linkedin.com/in/mohiseen/"},
-        {"platform": "Twitter", "link": "https://twitter.com/msnshaik"},
         {"platform": "GitHub", "link": "https://github.com/mohiseen"},
         {"platform": "Email", "link": "mailto:mohiseen.shaik2011@gmail.com"}
       ],
