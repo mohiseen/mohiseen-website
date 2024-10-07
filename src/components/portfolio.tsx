@@ -7,22 +7,24 @@ import { LinkedinLogo, GithubLogo, EnvelopeSimple, Buildings } from "@phosphor-i
 import Link from "next/link"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
+import content from '@/data/content.json'
+import "../app/globals.css"
 
-export default function Portfolio(props: object) {
-  const { data } = props
-  const { banner, portfolio, footer } = data;
+export default function Portfolio() {
+  // const { data } = props
+  const { banner, portfolio, footer } = content;
 
-  const [isMounted, setIsMounted] = useState(false);
+  // const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setIsMounted(true);
+  // }, []);
 
-  // Only render content when the component is mounted to avoid mismatch between SSR and client-side rendering
-  if (!isMounted) {
-    return null;
-  }
+  // // Only render content when the component is mounted to avoid mismatch between SSR and client-side rendering
+  // if (!isMounted) {
+  //   return null;
+  // }
 
   return (
     <div className="min-h-screen bg-gradient-to-bl from-gray-600 to-gray-950 text-white">
