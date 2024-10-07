@@ -145,7 +145,7 @@ export default function Portfolio(props: object) {
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
               <Card className="bg-gray-800 border-gray-700">
-                <CardHeader>
+                <CardHeader className="min-h-[95px]">
                   <CardTitle className="text-lime-400">{item.title}</CardTitle>
                   {item.metaInfo && <CardDescription className="flex gap-3"> <Buildings size={16} /> {item.metaInfo}</CardDescription>}
                 </CardHeader>
@@ -155,7 +155,7 @@ export default function Portfolio(props: object) {
                     alt={item.title}
                     width={400}
                     height={225}
-                    className="rounded-md mb-4"
+                    className="rounded-md mb-4 min-h-[220px] object-cover"
                   />
                   <p className="text-sm text-white">{item.description}</p>
                 </CardContent>
