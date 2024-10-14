@@ -34,7 +34,7 @@
       },
       {
         "title": "Thaimoli",
-        "link": "/html/project/thaimoli/",
+        "link": "https://mohiseen.netlify.app/html/project/thaimoli/",
         "image": "/images/thaimoli.jpg",
         "description": "Thaimoli is a daily newspaper-themed template for online newspaper websites.",
         "contributions": ["HTML", "CSS", "JS"]
@@ -49,7 +49,7 @@
       },
       {
         "title": "Pencil of Promise",
-        "link": "/html/project/pencil/",
+        "link": "https://mohiseen.netlify.app/html/project/pencil/",
         "image": "/images/pencil.jpg",
         "description": "Pencil of Promise is an education-themed template for expanding education businesses.",
         "contributions": ["HTML", "CSS", "JS"]
@@ -64,7 +64,7 @@
       },
       {
         "title": "Email App",
-        "link": "/html/project/drib-layout/",
+        "link": "https://mohiseen.netlify.app/html/project/drib-layout/",
         "image": "/images/email-app-by-Iftikhar-Shaikh.png",
         "description": "Email App is a template for email app interfaces posted by Iftikhar Shaik on Dribbble.",
         "contributions": ["HTML", "CSS", "JS"]
@@ -79,7 +79,7 @@
       },
       {
         "title": "Drumkit",
-        "link": "/html/project/jsday1/",
+        "link": "https://mohiseen.netlify.app/html/project/jsday1/",
         "image": "/images/drumkit.png",
         "description": "Drumkit is a template for photography-related websites, designed for expanding photography businesses.",
         "contributions": ["HTML", "CSS", "JS"]
