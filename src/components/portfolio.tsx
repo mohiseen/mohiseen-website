@@ -94,7 +94,7 @@ export default function Portfolio() {
                   variant={index === 0 ? "default" : "secondary"}
                   className="relative overflow-hidden group"
                 >
-                  <Link href={button.link}>
+                  <Link href={button.link} target="_blank">
                     <span className="relative z-10">{button.text}</span>
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100"
@@ -176,7 +176,7 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <Button asChild variant="ghost" size="sm">
-                    <Link href={item.link} className="bg-secondary">
+                    <Link href={item.link} className="bg-secondary" target="_blank">
                       View Project
                     </Link>
                   </Button>

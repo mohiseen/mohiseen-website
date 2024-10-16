@@ -17,6 +17,54 @@
     },
     "portfolio": [
       {
+        "title": "Takeoff Projects",
+        "link": "https://takeoffprojects.com",
+        "image": "/images/takeoffprojects.jpg",
+        "description": "Takeoff Edu Group - India's leading Academic Projects, Internships, Workshops, Training & PHD help zone.",
+        "contributions": ["Angular","Monorepo", "Node"],
+        "metaInfo": "At Youngminds Technology Solutions"
+      },
+      {
+        "title": "Ymtsindia",
+        "link": "https://ymtsindia.com",
+        "image": "/images/ymtsindia.jpg",
+        "description": "Youngminds is a leading Software Development Services Company Specializing in Innovative Technology Solutions.",
+        "contributions": ["CodeIgniter","HTML", "CSS"],
+        "metaInfo": "At Youngminds Technology Solutions"
+      },
+      {
+        "title": "Petrosoft",
+        "link": "https://petrolbunksoftware.com",
+        "image": "/images/petrosoft.jpg",
+        "description": "India's No.1 Petrol Pump Software for Accounting, Billing, Stock Maintenance & Employee Management ",
+        "contributions": ["CodeIgniter","HTML", "CSS"],
+        "metaInfo": "At Youngminds Technology Solutions"
+      },
+      {
+        "title": "Takeoff Upskill",
+        "link": "https://takeoffupskill.com/",
+        "image": "/images/takeoff-upskill.jpg",
+        "description": "IT Software Training Courses Institute in INDIA, Best Online & Offline IT Courses with Certificate.",
+        "contributions": ["CodeIgniter","HTML", "CSS"],
+        "metaInfo": "At Youngminds Technology Solutions"
+      },
+      {
+        "title": "Vemu College",
+        "link": "https://vemu.org/",
+        "image": "/images/vemu.jpg",
+        "description": "VEMU Institute of Technology is one of the best and finest engineering colleges in Chittoor District, AP.",
+        "contributions": ["CodeIgniter","HTML", "CSS"],
+        "metaInfo": "At Youngminds Technology Solutions"
+      },
+      {
+        "title": "Mother Theressa College",
+        "link": "https://mtieat.org/",
+        "image": "/images/mtieat1.jpg",
+        "description": "A premier Engineering College, To promote excellence in the field of engineering education, Research and Consultancy.",
+        "contributions": ["CodeIgniter","HTML", "CSS"],
+        "metaInfo": "At Youngminds Technology Solutions"
+      },
+      {
         "title": "Realbuild",
         "link": "https://goo.gl/BZvADh",
         "image": "/images/portfolio-image.png",
@@ -34,7 +82,7 @@
       },
       {
         "title": "Thaimoli",
-        "link": "https://mohiseen.com/html/project/thaimoli/",
+        "link": "https://mohiseen.netlify.app/html/project/thaimoli/",
         "image": "/images/thaimoli.jpg",
         "description": "Thaimoli is a daily newspaper-themed template for online newspaper websites.",
         "contributions": ["HTML", "CSS", "JS"]
@@ -49,7 +97,7 @@
       },
       {
         "title": "Pencil of Promise",
-        "link": "https://mohiseen.com/html/project/pencil/",
+        "link": "https://mohiseen.netlify.app/html/project/pencil/",
         "image": "/images/pencil.jpg",
         "description": "Pencil of Promise is an education-themed template for expanding education businesses.",
         "contributions": ["HTML", "CSS", "JS"]
@@ -64,7 +112,7 @@
       },
       {
         "title": "Email App",
-        "link": "https://mohiseen.com/html/project/drib-layout/",
+        "link": "https://mohiseen.netlify.app/html/project/drib-layout/",
         "image": "/images/email-app-by-Iftikhar-Shaikh.png",
         "description": "Email App is a template for email app interfaces posted by Iftikhar Shaik on Dribbble.",
         "contributions": ["HTML", "CSS", "JS"]
@@ -79,7 +127,7 @@
       },
       {
         "title": "Drumkit",
-        "link": "https://mohiseen.com/html/project/jsday1/",
+        "link": "https://mohiseen.netlify.app/html/project/jsday1/",
         "image": "/images/drumkit.png",
         "description": "Drumkit is a template for photography-related websites, designed for expanding photography businesses.",
         "contributions": ["HTML", "CSS", "JS"]

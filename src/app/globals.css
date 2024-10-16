@@ -5,7 +5,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+p.text-sm.text-white {
+  min-height: 60px;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
